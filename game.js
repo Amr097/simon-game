@@ -9,7 +9,7 @@ var level = 0;
 $(document).keypress(function() {
   if (!started) {
     $("#level-title").text("Level " + level);
-    nextSequence();
+    nextSequence()
     started = true;
   }
 });
@@ -19,10 +19,10 @@ $(".btn").click(function() {
   let userChosenColour = $(this).attr("id");
   userClickedPattern.push(userChosenColour);
 
-  playSound(userChosenColour);
-  animatePress(userChosenColour);
+  playSound(userChosenColour)
+  animatePress(userChosenColour)
 
-  checkAnswer(userClickedPattern.length-1);
+  checkAnswer(userClickedPattern.length-1)
 });
 
 
